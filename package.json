@@ -1,0 +1,47 @@
+{
+    "name": "vblob",
+    "version": "0.0.1",
+    "description": "VBLOB S3 Compatible Storage Daemon",
+    "keywords": [
+        "amazon",
+        "aws",
+        "s3",
+        "compatible",
+        "storage",
+        "daemon"
+    ],
+    "license": "Apache-2.0",
+    "private": true,
+    "author": "Sonic Wang <wangs@vmware.com>",
+    "contributors": [
+        {
+            "name": "Matthew Hall",
+            "email": "mhall@threatstream.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/threatstream/vblob"
+    },
+    "bugs": {
+        "url": "https://github.com/threatstream/vblob/issues"
+    },
+    "bin": {
+        "module-name": "./server.js"
+    },
+    "scripts": {
+        "test": "./node_modules/vows/bin/vows --spec test/*/test*.js",
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "~4.13.0",
+        "js-yaml": "~3.4.0",
+        "morgan": "~1.6.0",
+        "sax": "~1.1.0",
+        "winston": "~1.0.0"
+    },
+    "devDependencies": {
+        "vows": "~0.8.0"
+    },
+    "analyze": true
+}
