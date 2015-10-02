@@ -41,6 +41,7 @@
         "winston": "~1.0.0"
     },
     "devDependencies": {
+        "eslint": ">=1.5.1",
         "vows": "~0.8.0"
     },
     "analyze": true
